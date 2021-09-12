@@ -14,7 +14,6 @@ public class BotBuilderAutoConfiguration extends BotDependencyConfiguration {
 
     @Override
     public BotFrameworkHttpAdapter getBotFrameworkHttpAdaptor(com.microsoft.bot.integration.Configuration configuration) {
-        System.out.println(configuration);
         return new AdapterWithErrorHandler(configuration);
     }
 
