@@ -1,23 +1,26 @@
 package com.github.powerbotkit.autoconfigure;
 
-import com.microsoft.bot.integration.AdapterWithErrorHandler;
-import com.microsoft.bot.integration.BotFrameworkHttpAdapter;
 import com.microsoft.bot.integration.spring.BotDependencyConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties(BotbuilderProperties.class)
+@EnableConfigurationProperties(BotBuilderProperties.class)
 public class BotBuilderAutoConfiguration extends BotDependencyConfiguration {
 
-    private BotbuilderProperties botbuilderProperties;
+    private BotBuilderProperties botbuilderProperties;
 
+    @Bean
     @Override
-    public BotFrameworkHttpAdapter getBotFrameworkHttpAdaptor(com.microsoft.bot.integration.Configuration configuration) {
-        return new AdapterWithErrorHandler(configuration);
+    public com.microsoft.bot.integration.Configuration getConfiguration() {
+        if (this.botbuilderProperties == null) {
+            return super.getConfiguration();
+        }
+        return new BotBuilderPropertiesConfiguration(this.botbuilderProperties);
     }
 
-    public BotBuilderAutoConfiguration(BotbuilderProperties botbuilderProperties) {
+    public BotBuilderAutoConfiguration(BotBuilderProperties botbuilderProperties) {
         this.botbuilderProperties = botbuilderProperties;
     }
 }
