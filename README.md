@@ -28,6 +28,34 @@ public class EchoBotApplication {
 }
 ```
 
+create a spring bean what Implement an interface
+
+```java
+@Component
+public class EchoBot extends ActivityHandler {
+
+    @Override
+    protected CompletableFuture<Void> onMessageActivity(TurnContext turnContext) {
+        return turnContext.sendActivity(
+                MessageFactory.text("Echo: " + turnContext.getActivity().getText())
+        ).thenApply(sendResult -> null);
+    }
+
+    @Override
+    protected CompletableFuture<Void> onMembersAdded(
+            List<ChannelAccount> membersAdded,
+            TurnContext turnContext
+    ) {
+        return membersAdded.stream()
+                .filter(
+                        member -> !StringUtils
+                                .equals(member.getId(), turnContext.getActivity().getRecipient().getId())
+                ).map(channel -> turnContext.sendActivity(MessageFactory.text("Hello and welcome!")))
+                .collect(CompletableFutures.toFutureList()).thenApply(resourceResponses -> null);
+    }
+}
+```
+
 ## License
 
 [MIT](LICENSE) © PowerBotKit Team
