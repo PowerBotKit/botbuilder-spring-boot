@@ -2,6 +2,7 @@ package com.github.powerbotkit.autoconfigure;
 
 import com.microsoft.bot.integration.Configuration;
 
+import java.util.Objects;
 import java.util.Properties;
 
 public class BotBuilderPropertiesConfiguration implements Configuration {
@@ -29,7 +30,7 @@ public class BotBuilderPropertiesConfiguration implements Configuration {
     public BotBuilderPropertiesConfiguration(BotBuilderProperties botBuilderProperties) {
         super();
         this.properties = new Properties();
-        this.properties.setProperty(MICROSOFTAPPID, botBuilderProperties.getMicrosoftAppId());
-        this.properties.setProperty(MICROSOFTAPPPASSWORD, botBuilderProperties.getMicrosoftAppPassword());
+        this.properties.setProperty(MICROSOFTAPPID, Objects.isNull(botBuilderProperties.getMicrosoftAppId()) ? "" : botBuilderProperties.getMicrosoftAppId());
+        this.properties.setProperty(MICROSOFTAPPPASSWORD, Objects.isNull(botBuilderProperties.getMicrosoftAppPassword()) ? "" : botBuilderProperties.getMicrosoftAppPassword());
     }
 }
