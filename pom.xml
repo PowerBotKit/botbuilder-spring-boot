@@ -81,7 +81,7 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <autoVersionSubmodule>true</autoVersionSubmodule>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
