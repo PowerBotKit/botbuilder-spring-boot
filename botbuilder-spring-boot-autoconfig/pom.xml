@@ -3,13 +3,16 @@
     <parent>
         <artifactId>botbuilder-spring-boot</artifactId>
         <groupId>io.github.powerbotkit</groupId>
-        <version>0.0.0</version>
+        <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <name>botbuilder-spring-boot-autoconfig</name>
+    <description>a simple starter for spring boot and bot framework</description>
+    <url>https://github.com/PowerBotKit/botbuilder-spring-boot</url>
     <artifactId>botbuilder-spring-boot-autoconfig</artifactId>
 
     <properties>
+        <module.name>botbuilder-spring-boot-autoconfig</module.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
