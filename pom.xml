@@ -18,6 +18,11 @@
         <tag>HEAD</tag>
     </scm>
 
+    <issueManagement>
+		<url>https://github.com/PowerBotKit/botbuilder-spring-boot/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
     <distributionManagement>
         <repository>
             <id>repository</id>
