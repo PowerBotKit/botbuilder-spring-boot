@@ -1,4 +1,4 @@
-package com.github.powerbotkit.autoconfigure;
+package io.github.powerbotkit.autoconfigure;
 
 import com.microsoft.bot.integration.spring.BotDependencyConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

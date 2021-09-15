@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.powerbotkit</groupId>
+    <groupId>io.github.powerbotkit</groupId>
     <artifactId>botbuilder-spring-boot</artifactId>
     <packaging>pom</packaging>
     <version>0.0.0</version>
@@ -62,11 +62,11 @@
                 <groupId>com.microsoft.bot</groupId>
                 <artifactId>bot-integration-spring</artifactId>
                 <version>4.13.0</version>
-<!--                <scope>compile</scope>-->
+                <!--<scope>compile</scope>-->
             </dependency>
 
             <dependency>
-                <groupId>com.github.powerbotkit</groupId>
+                <groupId>io.github.powerbotkit</groupId>
                 <artifactId>botbuilder-spring-boot-autoconfigure</artifactId>
                 <version>${project.version}</version>
             </dependency>

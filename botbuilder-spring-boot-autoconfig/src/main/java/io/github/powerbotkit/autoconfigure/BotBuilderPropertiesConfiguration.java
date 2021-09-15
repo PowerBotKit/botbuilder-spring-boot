@@ -1,4 +1,4 @@
-package com.github.powerbotkit.autoconfigure;
+package io.github.powerbotkit.autoconfigure;
 
 import com.microsoft.bot.integration.Configuration;
 

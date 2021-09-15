@@ -8,7 +8,7 @@ add dependency
 
 ```xml
 <dependency>
-    <groupId>com.github.powerbotkit</groupId>
+    <groupId>io.github.powerbotkit</groupId>
     <artifactId>botbuilder-spring-boot-starter</artifactId>
     <version>0.0.0</version>
 </dependency>
