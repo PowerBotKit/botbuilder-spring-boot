@@ -42,6 +42,14 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Arthur Ming</name>
+            <email>mingguobin@live.com</email>
+            <url>https://github.com/damingerdai</url>
+        </developer>
+    </developers>
+
     <properties>
         <spring.boot.version>2.4.0</spring.boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
