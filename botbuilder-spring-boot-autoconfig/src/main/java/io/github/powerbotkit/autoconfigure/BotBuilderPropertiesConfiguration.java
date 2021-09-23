@@ -4,6 +4,7 @@ import com.microsoft.bot.integration.Configuration;
 
 import java.util.Objects;
 import java.util.Properties;
+import java.util.StringJoiner;
 
 public class BotBuilderPropertiesConfiguration implements Configuration {
 
@@ -32,5 +33,12 @@ public class BotBuilderPropertiesConfiguration implements Configuration {
         this.properties = new Properties();
         this.properties.setProperty(MICROSOFTAPPID, Objects.isNull(botBuilderProperties.getMicrosoftAppId()) ? "" : botBuilderProperties.getMicrosoftAppId());
         this.properties.setProperty(MICROSOFTAPPPASSWORD, Objects.isNull(botBuilderProperties.getMicrosoftAppPassword()) ? "" : botBuilderProperties.getMicrosoftAppPassword());
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", BotBuilderPropertiesConfiguration.class.getSimpleName() + "[", "]")
+                .add("properties=" + properties)
+                .toString();
     }
 }
