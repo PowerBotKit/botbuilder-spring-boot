@@ -14,17 +14,17 @@ public class BotBuilderPropertiesConfiguration implements Configuration {
 
     @Override
     public String getProperty(String key) {
-        return null;
+        return this.properties.getProperty(key);
     }
 
     @Override
     public Properties getProperties() {
-        return null;
+        return this.properties;
     }
 
     @Override
     public String[] getProperties(String key) {
-        return new String[0];
+        return this.getProperties(key);
     }
 
     public BotBuilderPropertiesConfiguration(BotBuilderProperties botBuilderProperties) {
