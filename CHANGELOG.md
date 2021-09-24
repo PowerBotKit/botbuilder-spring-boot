@@ -1,4 +1,9 @@
-# [](https://github.com/PowerBotKit/botbuilder-spring-boot/compare/v0.0.1...v) (2021-09-24)
+## [0.0.2](https://github.com/PowerBotKit/botbuilder-spring-boot/compare/v0.0.1...v0.0.2) (2021-09-24)
+
+
+### Bug Fixes
+
+* implement com.microsoft.bot.integration.Configuration#methods ([9c1ef3f](https://github.com/PowerBotKit/botbuilder-spring-boot/commit/9c1ef3f14f481581c0281fcd5e73fa8b02bcd14e))
 
 
 ## [0.0.1](https://github.com/PowerBotKit/botbuilder-spring-boot/compare/d7fcbaa191f08c15dcf74f53670f7092cd2bcb50...v0.0.1) (2021-09-15)

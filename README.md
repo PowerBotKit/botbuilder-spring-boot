@@ -10,7 +10,7 @@ add dependency
 <dependency>
     <groupId>io.github.powerbotkit</groupId>
     <artifactId>botbuilder-spring-boot-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
