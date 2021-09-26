@@ -56,6 +56,10 @@ public class EchoBot extends ActivityHandler {
 }
 ```
 
+## Samples
+
+[more samples](https://github.com/damingerdai/botbuilder-spring-boot-sample)
+
 ## License
 
 [MIT](LICENSE) © PowerBotKit Team
