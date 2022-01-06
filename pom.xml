@@ -4,7 +4,7 @@
     <groupId>io.github.powerbotkit</groupId>
     <artifactId>botbuilder-spring-boot</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>botbuilder-spring-boot</name>
     <description>a simple starter for spring boot and bot framework</description>
     <url>https://github.com/PowerBotKit/botbuilder-spring-boot</url>

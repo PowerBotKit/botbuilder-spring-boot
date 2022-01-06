@@ -3,7 +3,7 @@
     <parent>
         <artifactId>botbuilder-spring-boot</artifactId>
         <groupId>io.github.powerbotkit</groupId>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <name>botbuilder-spring-boot-starter</name>
