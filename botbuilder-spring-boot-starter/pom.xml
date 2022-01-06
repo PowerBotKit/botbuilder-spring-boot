@@ -34,25 +34,32 @@
         <dependency>
             <groupId>com.microsoft.bot</groupId>
             <artifactId>bot-integration-spring</artifactId>
-            <version>4.14.0</version>
-            <scope>compile</scope>
+            <version>${botbuilder.version}</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.bot</groupId>
             <artifactId>bot-dialogs</artifactId>
-            <version>4.14.0</version>
-            <scope>compile</scope>
+            <version>${botbuilder.version}</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.bot</groupId>
             <artifactId>bot-ai-qna</artifactId>
-            <version>4.14.0</version>
-            <scope>compile</scope>
+            <version>${botbuilder.version}</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.bot</groupId>
             <artifactId>bot-ai-luis-v3</artifactId>
-            <version>4.14.0</version>
+            <version>${botbuilder.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.bot</groupId>
+            <artifactId>bot-applicationinsights</artifactId>
+            <version>${botbuilder.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.bot</groupId>
+            <artifactId>bot-azure</artifactId>
+            <version>${botbuilder.version}</version>
         </dependency>
     </dependencies>
 
